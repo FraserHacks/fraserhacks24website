@@ -2,45 +2,46 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="hero-content">
-
+    <main className="min-h-screen flex flex-col items-center justify-between p-24">
+    <div> 
         <Image
           id="hero-logo"
           src="/hero-logo.png"
           alt="FraserHacks Logo: Blue circular logo"
-          width={500} // Replace with actual width of your image
-          height={500} // Replace with actual height of your image
+          width={500}
+          height={500}
         />
-        <h2>May 4, 2019</h2>
-        <h3 style={{ marginBottom: '20px' }}> John Fraser Secondary School, Mississauga
-</h3>
+            <div className="text-center max-w-[800px] mx-auto">
+        <h2 className="text-white text-2xl font-semibold mt-4">May 4, 2019</h2>
+        <h3 className="text-gray-400 text-xl font-normal mt-2 mb-5">John Fraser Secondary School, Mississauga</h3>
         <div id="mc_embed_signup">
           <form
             action="https://FraserHacks.us19.list-manage.com/subscribe/post?u=a50dd0c50b611bd5e179d9b85&amp;id=36ad7a17fc"
             method="get"
-            className="mailinglist validate"
+            className="validate"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
             target="_blank"
-            noValidate // Corrected novalidate to noValidate
+            noValidate
           >
-            
             <label>
-
-  <div className="mt-4"> {/* This adds a margin-top of 1rem (16px); adjust the number as needed */}
-    <button id="register" className="mt-8"> {/* This adds a margin-top of 2rem (32px); adjust the number as needed */}
-      Register
-    </button>
-  </div>
-</label>
+              <span className="label">
+                Sign up for our mailing list to be notified of when applications are open.
+              </span>
+              <div className="mt-4">
+                <button id="register" className="bg-purple-600 text-white py-3 px-6 text-lg font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-purple-700">
+                  Register
+                </button>
+              </div>
+            </label>
             {/* Hidden input for bot protection */}
-            <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-              <input type="text" name="b_a50dd0c50b611bd5e179d9b85_36ad7a17fc"  value="" />
+            <div className="absolute left-[-5000px]" aria-hidden="true">
+              <input type="text" name="b_a50dd0c50b611bd5e179d9b85_36ad7a17fc" value="" />
             </div>
             <div className="info"></div>
           </form>
           <div className="scroll-down"></div>
+          </div> 
         </div>
       </div>
     </main>
