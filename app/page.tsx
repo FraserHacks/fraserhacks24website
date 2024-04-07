@@ -1,6 +1,10 @@
 import Image from 'next/image';
+import styles from "../styles.module.css"
+
 
 export default function Home() {
+
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-between p-24">
     <div> 
@@ -10,9 +14,14 @@ export default function Home() {
           alt="FraserHacks Logo: Blue circular logo"
           width={500}
           height={500}
+          className={`${styles.blink} ${styles.glow}`}
         />
-            <div className="text-center max-w-[800px] mx-auto">
-        <h2 className="text-white text-2xl font-semibold mt-4">May 4, 2019</h2>
+        
+     
+        
+          
+            <div className="text-center max-w-[800px] mx-auto" >
+        <h2 className={`${styles.arcadeStyle} text-white text-4xl font-semibold mt-4`}>May 4, 2019</h2>
         <h3 className="text-gray-400 text-xl font-normal mt-2 mb-5">John Fraser Secondary School, Mississauga</h3>
         <div id="mc_embed_signup">
           <form

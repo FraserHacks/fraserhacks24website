@@ -1,0 +1,19 @@
+@keyframes blinkAnimation {
+  0%, 8%, 20%, 100% { opacity: 1; } /* Image is visible most of the time */
+  4%, 16% { opacity: 0; } /* Two quick blinks */
+}
+
+.blink {
+  animation: blinkAnimation 2s infinite; /* Total duration including pause */
+}
+
+@font-face {
+  font-family: 'ArcadeFont'; /* Use a custom name for your font */
+  src: url('/fonts/ARCADECLASSIC.TTF') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+.arcadeStyle {
+  font-family: 'ArcadeFont', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
+}
+
