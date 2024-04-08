@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import styles from "../styles.module.css"
 import Faq from '../components/Faq';
+
 import Footer from '../components/Footer';
+import Description from '../components/Description'
 
 
 export default function Home() {
@@ -41,33 +43,15 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Short Description Section */}
-      <h2 className={`${styles.arcadeStyle} text-3xl text-white`}>Mississauga's Biggest Hackathon</h2>
-      <div className="max-w-[800px] mx-auto flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+      <Description />
+     
 
-        <div className="w-full md:w-1/2">
-
-          <img src="/descript-img.png" alt="Description" className="w-full h-auto" />
-        </div>
-        <div className="w-full md:w-1/2">
-
-          <p className={`${styles.arcadeStyle} text-xl mt-4 leading-6 tracking-wide`}>
-            FraserHacks is Mississauga's largest high school hackathon organized entirely by students at John Fraser Secondary School. More than 100 students
-            <br></br>
-            <br></br>
-            2665 Erin Centre Blvd, Mississauga, ON L5M 5H6
-          </p>
-
-        </div>
-      </div>
-  
-      {/* FAQ Section */}
       <Faq />
 
-      {/* Footer Section */}
+
+
       <Footer />
       
-      {/* Additional sections can be added here following the same pattern */}
     </main>
   );
 }
