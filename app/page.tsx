@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import styles from "../styles.module.css"
 import Faq from '../components/Faq';
+
+import Footer from '../components/Footer';
 import Description from '../components/Description'
+
 
 export default function Home() {
   return (
@@ -46,6 +49,9 @@ export default function Home() {
       <Faq />
 
 
+
+      <Footer />
+      
     </main>
   );
 }
