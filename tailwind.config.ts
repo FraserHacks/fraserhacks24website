@@ -13,6 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'fraser-turquoise': "#0CEAD9",
+        'fraser-dark-turquoise': "#3ACADF",
+        'fraser-blue': "#729EFD",
+        'fraser-purple': "#8A64D6",
+        'fraser-dark-purple': "#5C3A92",
+      }
     },
   },
   plugins: [],
