@@ -17,7 +17,7 @@ const questions: questionAndAnswer[] = [
     },
     {
         title: "DO I NEED A TEAM?",
-        content: "You can go solo or participate with a team up with up to 4 individuals! Don't have a team but want to be part of one? You can specify while signing up that you would like to be part of a team and we will also have networking opportunity to make teams at the beginning of hackathon!"
+        content: "You can go solo or participate with a team up with up to 4 individuals! Don&apos;t have a team but want to be part of one? You can specify while signing up that you would like to be part of a team and we will also have networking opportunity to make teams at the beginning of hackathon!"
     },
     {
         title: "WHERE CAN I FIND DIRECTIONS TO THE BUILDING?",
