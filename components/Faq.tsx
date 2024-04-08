@@ -32,7 +32,7 @@ const questions: questionAndAnswer[] = [
         content: "A device to create your project on, chargers, and yourself!"
     },
     {
-        title: "ANY QUESTIONS WE DIDN&apos;T ANSWER?",
+        title: "ANY QUESTIONS WE DIDN'T ANSWER?",
         content: <>You can contact us at <a href="mailto:fraserhacks24@gmail.com" className="text-fraser-turquoise">fraserhacks24@gmail.com </a>if you have any more questions.</>
     }
 ]
