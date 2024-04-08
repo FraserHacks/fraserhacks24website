@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from "../styles.module.css"
 import Faq from '../components/Faq';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -63,6 +64,9 @@ export default function Home() {
       {/* FAQ Section */}
       <Faq />
 
+      {/* Footer Section */}
+      <Footer />
+      
       {/* Additional sections can be added here following the same pattern */}
     </main>
   );
