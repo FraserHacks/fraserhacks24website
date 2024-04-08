@@ -15,7 +15,7 @@ const config: Config = {
       },
       colors: {
         'fraser-turquoise': "#0CEAD9",
-        'fraser-darker-turquoise': "#3ACADF",
+        'fraser-dark-turquoise': "#3ACADF",
         'fraser-blue': "#729EFD",
         'fraser-purple': "#8A64D6",
         'fraser-dark-purple': "#5C3A92",

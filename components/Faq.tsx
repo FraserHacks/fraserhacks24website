@@ -33,7 +33,7 @@ const questions: questionAndAnswer[] = [
     },
     {
         title: "ANY QUESTIONS WE DIDN'T ANSWER?",
-        content: "You can contact us at fraserhacks24@gmail.com if you have any more questions."
+        content: <>You can contact us at <a href="mailto:fraserhacks24@gmail.com" className="text-fraser-turquoise">fraserhacks24@gmail.com </a>if you have any more questions.</>
     }
 ]
 
@@ -41,7 +41,7 @@ const questions: questionAndAnswer[] = [
 
 export default function Faq() {
     return (
-        <section className='flex flex-col max-w-[800px] p-2 items-center md:p-20 md:py-16 lg:px-32 items-center" id="faq" style={{backgroundColor: "#000000"}}'>
+        <section className='flex flex-col max-w-[800px] items-center md:p-20 md:py-16 lg:px-32 items-center" id="faq" style={{backgroundColor: "#000000"}}'>
             <div className='flex flex-col text-center mb-8'>
                 <h1 className='text-4xl text-white font-bold'>Frequently Asked Questions</h1>
             </div>
