@@ -12,7 +12,7 @@ export default function Home() {
       <div>
         <Image
           id="hero-logo"
-          src="/hero-logo.png"
+          src="/hero-logo2.png"
           alt="FraserHacks Logo: Blue circular logo"
           width={500}
           height={500}
