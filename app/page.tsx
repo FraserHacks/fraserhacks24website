@@ -8,7 +8,7 @@ import Description from '../components/Description'
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-start p-10 space-y-12">
+    <main className="min-h-screen flex flex-col items-center justify-start p-10">
       <div>
         <Image
           id="hero-logo"

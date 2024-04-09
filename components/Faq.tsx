@@ -41,7 +41,7 @@ const questions: questionAndAnswer[] = [
 
 export default function Faq() {
     return (
-        <section className='flex flex-col max-w-[800px] items-center md:p-20 md:py-16 lg:px-32 items-center" id="faq" style={{backgroundColor: "#000000"}}'>
+        <section className='flex flex-col max-w-[900px] items-center md:px-20 md:pt-10 lg:px-32 items-center" id="faq" style={{backgroundColor: "#000000"}}'>
             <div className='flex flex-col text-center mb-8'>
                 <h1 className='text-4xl text-white font-bold'>Frequently Asked Questions</h1>
             </div>
