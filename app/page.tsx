@@ -12,8 +12,8 @@ export default function Home() {
       <div>
         <Image
           id="hero-logo"
-          src="/hero-logo.png"
-          alt="FraserHacks Logo: Blue circular logo"
+          src="/hero-logo.svg"
+          alt="FraserHacks Logo: Purple circular logo"
           width={500}
           height={500}
           className={`${styles.blink} ${styles.glow}`}
