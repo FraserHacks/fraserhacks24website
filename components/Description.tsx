@@ -31,15 +31,37 @@ return (
 </div>
 
 
+<div className="flex flex-col md:flex-row">
+  <div className="w-full md:w-1/2">
 
-  <div className="w-full lg:w-1/2">
-
-  <h2 className={`${styles.arcadeStyle} text-center text-4xl text-white mt-6`}>FraserHacks 2019</h2>
-    <p className="text-center text-xl mt-4 leading-6 tracking-wide pb-10">
-      On May 4 2019 students from all over Peel gathered together to innovate, learn and meet new people. We&apos;re excited to bring the fun back this year with FraserHacks 2024. For a look back visit <a href="https://kev.lu/FraserHacks-Website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">FraserHacks 2019</a>.
-    </p>
-
+  <div className="w-full md:w-1/2 md:max-w-[560px] mx-auto mt-10">
+  <p className="text-xl mt-4 leading-6 ">
+    On May 4, 2019, students from all over Peel gathered together to innovate, learn, and meet new people. We&apos;re excited to bring the fun back this year with FraserHacks 2024. For a look back visit <a href="https://kev.lu/FraserHacks-Website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">FraserHacks 2019</a>.
+  </p>
+</div>
   </div>
+  <div className="w-full md:w-1/2 flex justify-center items-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/p5iQph5EPK4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+  </div>
+</div>
+<div className="bg-black py-8">
+  <h2 className="text-white text-center text-3xl font-bold mb-6">Check Out Our Success From 2019!</h2>
+  <div className="flex justify-center space-x-4">
+  <div className="bg-showcase-blue rounded-lg p-4 w-[your-desired-width] text-white text-center">
+    <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Students</p>
+    <p className={`${styles.arcadeStyle}  text-5xl font-bold`}>130+</p>
+  </div>
+  <div className="bg-showcase-blue rounded-lg p-4 w-[your-desired-width] text-white text-center">
+    <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Prizes</p>
+    <p className={`${styles.arcadeStyle} text-5xl font-bold`}>13K+</p>
+  </div>
+  <div className="bg-showcase-blue rounded-lg p-4 w-[your-desired-width] text-white text-center">
+    <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Projects</p>
+    <p className={`${styles.arcadeStyle} text-5xl font-bold`}>30+</p>
+  </div>
+  </div>
+</div>
+
   </section>
 )
 }

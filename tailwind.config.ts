@@ -19,6 +19,8 @@ const config: Config = {
         'fraser-blue': "#729EFD",
         'fraser-purple': "#8A64D6",
         'fraser-dark-purple': "#5C3A92",
+        'showcase-blue': '#729ffc',
+        'showcase-black':'#333333'
       }
     },
   },
