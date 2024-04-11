@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Description(){
 return (
     <section className="flex flex-col items-center">
-<h2 className={`${styles.arcadeStyle} text-4xl text-white`}>Mississauga&apos;s Biggest Hackathon</h2>
+<h2 className={`${styles.arcadeStyle} text-4xl pt-10 text-center text-white`}>Mississauga&apos;s Biggest Hackathon</h2>
 <div className="max-w-[800px] mx-auto flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
 
   <div className="w-full md:w-1/2">
@@ -19,8 +19,7 @@ return (
     />
   </div>
   <div className="w-full md:w-1/2">
-
-    <p className="text-xl mt-4 leading-6 tracking-wide text-white">
+    <p className="text-xl text-center md:text-left mt-4 leading-6 tracking-wide text-white">
     FraserHacks is Mississauga&apos;s largest high school hackathon organized entirely by students at John Fraser Secondary School. More than 100 students from all of Peel Region will be coming together on May 4, 2019, for a full 10 hours of friendly hacking, enthusiastic learning, and delicious food.
       <br></br>
       <br></br>
@@ -29,7 +28,6 @@ return (
 
   </div>
 </div>
-
 
 
 <div className="flex flex-col md:flex-row">
