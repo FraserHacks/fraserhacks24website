@@ -37,7 +37,7 @@ return (
 
   <div className="w-full md:w-1/2 md:max-w-[560px] mx-auto mt-10">
   <p className="text-xl mt-4 leading-6 ">
-    On May 4, 2019, students from all over Peel gathered together to innovate, learn, and meet new people. We're excited to bring the fun back this year with FraserHacks 2024. For a look back visit <a href="https://kev.lu/FraserHacks-Website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">FraserHacks 2019</a>.
+    On May 4, 2019, students from all over Peel gathered together to innovate, learn, and meet new people. We&apos;re excited to bring the fun back this year with FraserHacks 2024. For a look back visit <a href="https://kev.lu/FraserHacks-Website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">FraserHacks 2019</a>.
   </p>
 </div>
   </div>
