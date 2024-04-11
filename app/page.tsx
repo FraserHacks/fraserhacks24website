@@ -36,7 +36,7 @@ export default function Home() {
           </label>
           {/* Hidden input for bot protection */}
           <div className="absolute left-[-5000px]" aria-hidden="true">
-            <input type="text" name="b_a50dd0c50b611bd5e179d9b85_36ad7a17fc" value="" />
+            <input type="text" name="b_a50dd0c50b611bd5e179d9b85_36ad7a17fc" value="" readOnly />
           </div>
           <div className="info"></div>
 

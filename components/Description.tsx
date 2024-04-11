@@ -42,7 +42,7 @@ return (
 </div>
   </div>
   <div className="w-full md:w-1/2 flex justify-center items-center">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/p5iQph5EPK4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/p5iQph5EPK4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   </div>
 </div>
 <div className="bg-black py-8">
