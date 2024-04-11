@@ -35,8 +35,8 @@ return (
 <div className="flex flex-col md:flex-row">
   <div className="w-full md:w-1/2">
 
-  <div className="w-full md:w-1/2 md:max-w-[560px] mx-auto">
-  <p className="text-xl mt-4 leading-6">
+  <div className="w-full md:w-1/2 md:max-w-[560px] mx-auto mt-10">
+  <p className="text-xl mt-4 leading-6 ">
     On May 4, 2019, students from all over Peel gathered together to innovate, learn, and meet new people. We're excited to bring the fun back this year with FraserHacks 2024. For a look back visit <a href="https://kev.lu/FraserHacks-Website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">FraserHacks 2019</a>.
   </p>
 </div>
@@ -50,15 +50,15 @@ return (
   <div className="flex justify-center space-x-4">
   <div className="bg-showcase-blue rounded-lg p-4 w-[your-desired-width] text-white text-center">
     <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Students</p>
-    <p className={`${styles.arcadeStyle}  text-4xl font-bold`}>130+</p>
+    <p className={`${styles.arcadeStyle}  text-5xl font-bold`}>130+</p>
   </div>
   <div className="bg-showcase-blue rounded-lg p-4 w-[your-desired-width] text-white text-center">
     <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Prizes</p>
-    <p className={`${styles.arcadeStyle} text-4xl font-bold`}>13K+</p>
+    <p className={`${styles.arcadeStyle} text-5xl font-bold`}>13K+</p>
   </div>
   <div className="bg-showcase-blue rounded-lg p-4 w-[your-desired-width] text-white text-center">
     <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Projects</p>
-    <p className={`${styles.arcadeStyle} text-4xl font-bold`}>30+</p>
+    <p className={`${styles.arcadeStyle} text-5xl font-bold`}>30+</p>
   </div>
   </div>
 </div>
