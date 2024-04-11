@@ -20,7 +20,7 @@ return (
   </div>
   <div className="w-full md:w-1/2">
 
-    <p className="text-xl mt-4 leading-6 tracking-wide">
+    <p className="text-xl mt-4 leading-6 tracking-wide text-white">
     FraserHacks is Mississauga&apos;s largest high school hackathon organized entirely by students at John Fraser Secondary School. More than 100 students from all of Peel Region will be coming together on May 4, 2019, for a full 10 hours of friendly hacking, enthusiastic learning, and delicious food.
       <br></br>
       <br></br>
@@ -34,8 +34,7 @@ return (
 
 <div className="flex flex-col md:flex-row">
   <div className="w-full md:w-1/2">
-
-  <div className="w-full md:w-1/2 md:max-w-[560px] mx-auto mt-10">
+  <div className="w-full text-white md:w-1/2 md:max-w-[560px] mx-auto mt-10">
   <p className="text-xl mt-4 leading-6 ">
     On May 4, 2019, students from all over Peel gathered together to innovate, learn, and meet new people. We&apos;re excited to bring the fun back this year with FraserHacks 2024. For a look back visit <a href="https://kev.lu/FraserHacks-Website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">FraserHacks 2019</a>.
   </p>

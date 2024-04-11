@@ -8,7 +8,7 @@ import Description from '../components/Description'
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-start p-10 space-y-12">
+    <main className="min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black">
       <div>
         <Image
           id="hero-logo"
@@ -25,7 +25,7 @@ export default function Home() {
         <h3 className="text-gray-400 text-xl font-normal mt-2 mb-5">John Fraser Secondary School, Mississauga</h3>
         <div id="mc_embed_signup" >
           <label>
-            <span className="label">
+            <span className="label text-white">
               Sign up for our mailing list to be notified of when applications are open.
             </span>
             <div className="mt-4">
