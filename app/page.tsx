@@ -1,12 +1,17 @@
 import Image from 'next/image';
 import styles from "../styles.module.css"
 import Faq from '../components/Faq';
+
+import Sponsors from '../components/Sponsors';
+
 import Navbar from '../components/Navbar'
+
 import Footer from '../components/Footer';
 import Description from '../components/Description'
 
 
-export default function Home() {
+
+export default async function Home() {
   return (
     <>
     <Navbar/>
@@ -47,12 +52,13 @@ export default function Home() {
       </div>
 <div id="about"> 
       <Description />
+
       </div>  
 <div id="faq">
       <Faq />
       </div>
 
-
+      <Sponsors />
 
       <Footer />
       
