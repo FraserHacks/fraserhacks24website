@@ -28,10 +28,10 @@ export default {
             type: "string",
             options: {
                 list: [
-                    { title: 'Platinum / Hatchling', value: 'platinum' },
-                    { title: 'Gold / Juvenile', value: 'gold' },
-                    { title: 'Silver / Hatchling', value: 'silver' },
-                    { title: "Bronze / Egg", value: "bronze" },
+                    { title: 'Platinum', value: 'platinum' },
+                    { title: 'Gold', value: 'gold' },
+                    { title: 'Silver', value: 'silver' },
+                    { title: "Bronze", value: "bronze" },
                     { title: "None", value: "none" }
                 ],
                 layout: 'radio'

@@ -1,3 +1,4 @@
+'use server'
 import createImageUrlBuilder from '@sanity/image-url'
 import type { Image } from 'sanity'
 
