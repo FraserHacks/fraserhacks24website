@@ -1,14 +1,17 @@
 import Image from 'next/image';
 import styles from "../styles.module.css"
 import Faq from '../components/Faq';
-
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import Description from '../components/Description'
 
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black">
+    <>
+    <Navbar/>
+    <main className="min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black ">
+
       <div>
         <Image
           id="hero-logo"
@@ -53,5 +56,6 @@ export default function Home() {
       <Footer />
       
     </main>
+    </>
   );
 }
