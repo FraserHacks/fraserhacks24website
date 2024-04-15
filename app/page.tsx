@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import styles from "../styles.module.css"
 import Faq from '../components/Faq';
+
 import Sponsors from '../components/Sponsors';
+
+import Navbar from '../components/Navbar'
+
 import Footer from '../components/Footer';
 import Description from '../components/Description'
 
@@ -9,8 +13,11 @@ import Description from '../components/Description'
 
 export default async function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black">
-      <div>
+    <>
+    <Navbar/>
+    <main className="min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black ">
+
+      <div id="home">
         <Image
           id="hero-logo"
           src="/hero-logo.svg"
@@ -43,15 +50,19 @@ export default async function Home() {
 
         </div>
       </div>
-
+<div id="about"> 
       <Description />
-     
+
+      </div>  
+<div id="faq">
       <Faq />
+      </div>
 
       <Sponsors />
 
       <Footer />
       
     </main>
+    </>
   );
 }
