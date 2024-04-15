@@ -6,25 +6,34 @@ interface NavbarLinksProps {
 }
 
 function NavbarLinks({ closeMobileMenu }: NavbarLinksProps) {
+  
+    const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    event.preventDefault(); // Prevent the default anchor link behavior
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      closeMobileMenu(); 
+    }
+  };
   return (
     <>
-       <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6"></div>
-      <div className="navbar-section-link-container">
-        <Link href="/" className="text-white text-lg no-underline hover:text-purple-400" onClick={closeMobileMenu}>
+
+           <div className="navbar-section-link-container">
+        <a href="#home" className="text-white text-lg no-underline hover:text-purple-400" onClick={(e) => scrollToSection(e, '#home')}>
           Home
-        </Link>
+        </a>
       </div>
 
       <div className="navbar-section-link-container">
-        <Link href="/dream-space" className="text-white text-lg no-underline hover:text-purple-400" onClick={closeMobileMenu}>
+        <a href="#about" className="text-white text-lg no-underline hover:text-purple-400" onClick={(e) => scrollToSection(e, '#about')}>
           About
-        </Link>
+        </a>
       </div>
 
       <div className="navbar-section-link-container">
-        <Link href="/microbit" className="text-white text-lg no-underline hover:text-purple-400" onClick={closeMobileMenu}>
-         FAQ
-        </Link>
+        <a href="#faq" className="text-white text-lg no-underline hover:text-purple-400" onClick={(e) => scrollToSection(e, '#faq')}>
+          FAQ
+        </a>
       </div>
 
       

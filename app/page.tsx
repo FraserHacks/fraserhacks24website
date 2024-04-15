@@ -12,7 +12,7 @@ export default function Home() {
     <Navbar/>
     <main className="min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black ">
 
-      <div>
+      <div id="home">
         <Image
           id="hero-logo"
           src="/hero-logo.svg"
@@ -45,11 +45,12 @@ export default function Home() {
 
         </div>
       </div>
-
+<div id="about"> 
       <Description />
-     
-
+      </div>  
+<div id="faq">
       <Faq />
+      </div>
 
 
 
