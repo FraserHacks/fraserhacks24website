@@ -3,7 +3,6 @@
 import { sanityFetch } from "../sanity/lib/util";
 import { SanityReference } from "@sanity/image-url/lib/types/types";
 import SponsorCard from './SponsorCard'
-import { redirect } from "next/dist/server/api-utils";
 
 export interface SponsorData {
     name: string,
@@ -21,11 +20,7 @@ export interface SponsorList {
     none: SponsorData[]
 }
 
-
-
-
-export async function SponsorSection({ sponsors, name, size }: { sponsors: SponsorData[]; name: string, size: number}) {
-    
+export async function SponsorSection({ sponsors, name, size }: { sponsors: SponsorData[]; name: string, size: number }) {
     return (
         <div className="flex flex-col items-center justify-center">
             <h2 className="text-3xl font-semibold pb-5 text-center text-">{name} Sponsors</h2>
