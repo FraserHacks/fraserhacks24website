@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <>
     <Navbar/>
-    <main className="min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black ">
+    <main className={` min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black`}>
 
       <div id="home">
         <Image
@@ -50,15 +50,15 @@ export default async function Home() {
 
         </div>
       </div>
-<div id="about"> 
+<div id="about">
       <Description />
-
       </div>  
 <div id="faq">
       <Faq />
       </div>
-
+<div id='sponsors'>
       <Sponsors />
+      </div>
 
       <Footer />
       

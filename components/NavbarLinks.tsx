@@ -35,6 +35,11 @@ function NavbarLinks({ closeMobileMenu }: NavbarLinksProps) {
           FAQ
         </a>
       </div>
+      <div className="navbar-section-link-container">
+        <a href="#sponsors" className="text-white text-lg no-underline hover:text-purple-400" onClick={(e) => scrollToSection(e, '#sponsors')}>
+          Sponsors
+        </a>
+      </div>
 
       
  </>

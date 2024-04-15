@@ -19,17 +19,17 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const targetScrollY = 16; // Change this to your specific scroll point
+      const targetScrollY = 16; 
       setNavbarScrolled(window.scrollY > targetScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+// for some reason anything about max-w-7, the scrolling is not smooth and just directly goes to full screen
   return (
-    <div className={`navbar-root-container fixed inset-x-0 top-0 z-10 justify-center items-center transition-all duration-300 w-full`}>
-      <div className={`navbar-container transition-all duration-300 mx-auto flex h-16 lg:h-20 px-10 ${navbarScrolled ? 'max-w-5xl' : 'max-w-7xl'} ${navbarScrolled ? 'shadow-md bg-blue-800' : 'bg-blue-800'}`}>
+    <div className={`navbar-root-container fixed inset-x-0 top-0 z-10 justify-center items-center transition-all duration-300 w-full `}>
+      <div className={`navbar-container transition-all duration-300 mx-auto flex h-16 lg:h-20 px-10 ${navbarScrolled ? 'max-w-7xl' : 'max-w-5xl'} ${navbarScrolled ? 'bg-slate-600' : 'bg-slate-600'} rounded-lg`}>
         <div className='desktop-container flex justify-between w-full items-center h-full'>
           <Link href="/" className="text-xl md:text-2xl lg:text-3xl font-bold hover:text-purple-400">
             Fraser Hacks 
@@ -41,7 +41,7 @@ function Navbar() {
           <button onClick={toggleMenu} className="text-lg">
             {menuOpen ? 'Close' : 'Menu'}
           </button>
-          <div className={`absolute right-0 mt-2 bg-blue-800 shadow-md z-30 transition-opacity duration-300 ${menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+          <div className={`absolute right-0 mt-2 bg-slate-600 shadow-md z-30 transition-opacity duration-300 ${menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
             <div className="flex flex-col items-start p-4">
               <NavbarLinks closeMobileMenu={closeMenu} />
             </div>
