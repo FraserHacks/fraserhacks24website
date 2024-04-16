@@ -3,14 +3,22 @@ import styles from "../styles.module.css"
 import Faq from '../components/Faq';
 import Countdown from '../components/Countdown';
 
+import Sponsors from '../components/Sponsors';
+
+import Navbar from '../components/Navbar'
+
 import Footer from '../components/Footer';
 import Description from '../components/Description'
 
 
-export default function Home() {
+
+export default async function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black">
-      <div>
+    <>
+    <Navbar/>
+    <main className={` min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black`}>
+
+      <div id="home">
         <Image
           id="hero-logo"
           src="/hero-logo.svg"
@@ -45,16 +53,19 @@ export default function Home() {
       </div>
 
       <Countdown />
-
-      <Description />
-     
-
-      <Faq />
-
-
+      <div id="about">
+        <Description />
+      </div>  
+      <div id="faq">
+        <Faq />
+      </div>
+      <div id='sponsors'>
+        <Sponsors />
+      </div>
 
       <Footer />
       
     </main>
+    </>
   );
 }
