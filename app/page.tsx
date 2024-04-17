@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from "../styles.module.css"
+import './globals.css';
 import Faq from '../components/Faq';
 
 import Sponsors from '../components/Sponsors';
@@ -15,20 +16,20 @@ export default async function Home() {
   return (
     <>
     <Navbar/>
-    <main className={` min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black`}>
+    <main className={` min-h-screen flex flex-col items-center justify-start p-7 space-y-12 bg-black `}>
 
-      <div id="home">
+      <div id="home" className="mt-20">
         <Image
           id="hero-logo"
           src="/hero-logo.svg"
           alt="FraserHacks Logo: Purple circular logo"
           width={500}
           height={500}
-          className={`${styles.blink} ${styles.glow}`}
+          className={`${styles.blink} ${styles.glow} mb-0`}
         />
       </div>
 
-      <div className="text-center max-w-[800px] mx-auto">
+      <div className="text-center max-w-[800px]">
         <h2 className={`${styles.arcadeStyle} text-white text-4xl font-semibold mt-4`}>May 24, 2024</h2>
         <h3 className="text-gray-400 text-xl font-normal mt-2 mb-5">John Fraser Secondary School, Mississauga</h3>
         <div id="mc_embed_signup" >

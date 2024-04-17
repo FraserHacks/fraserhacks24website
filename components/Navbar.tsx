@@ -28,7 +28,8 @@ function Navbar() {
   }, []);
 // for some reason anything about max-w-7, the scrolling is not smooth and just directly goes to full screen
   return (
-    <div className={`navbar-root-container fixed inset-x-0 top-0 z-10 justify-center items-center transition-all duration-300 w-full `}>
+    
+    <main className={`navbar-root-container fixed inset-x-0 top-0 z-10 justify-center items-center transition-all duration-300 w-full `}>
       <div className={`navbar-container transition-all duration-300 mx-auto flex h-16 lg:h-20 px-10 ${navbarScrolled ? 'max-w-7xl' : 'max-w-5xl'} ${navbarScrolled ? 'bg-slate-600' : 'bg-slate-600'} rounded-lg`}>
         <div className='desktop-container flex justify-between w-full items-center h-full'>
           <Link href="/" className="text-xl md:text-2xl lg:text-3xl font-bold hover:text-purple-400">
@@ -53,7 +54,8 @@ function Navbar() {
         </div>
       </div>
     </div>
-    </div>
+  
+    </main>
   );
 }
 
