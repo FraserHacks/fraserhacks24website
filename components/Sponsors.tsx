@@ -66,10 +66,10 @@ export default async function Sponsors() {
                     <SponsorSection sponsors={sponsors.bronze} name="Bronze" size={100} />
                 )}
 
-                <a className="bg-fraser-turquoise h-12 py-3 px-6 text-md md:text-lg text-black font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-fraser-dark-turquoise" href="mailto:sponsors@fraserhacks.com" target="_blank">
+                <a className="flex items-center justify-center bg-fraser-turquoise h-12 py-3 px-6 text-md md:text-lg text-black font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-fraser-dark-turquoise" href="mailto:sponsors@fraserhacks.com" target="_blank">
                     Become a Sponsor
                 </a>
-                <a className="bg-fraser-turquoise h-12 py-3 px-6 text-center text-sm md:text-lg text-black font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-fraser-dark-turquoise" href="/documents/Sponsorship.pdf" target="_blank">
+                <a className="flex items-center justify-center bg-fraser-turquoise h-12 py-6 md:py-3 px-6 text-center text-sm md:text-lg text-black font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-fraser-dark-turquoise" href="/documents/Sponsorship.pdf" target="_blank">
                     View our Sponsorship Package
                 </a>
             </div>
