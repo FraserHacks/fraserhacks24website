@@ -33,7 +33,7 @@ export async function SponsorSection({ sponsors, name, size }: { sponsors: Spons
 
 export default async function Sponsors() {
 
-    const sponsorsRaw = await sanityFetch({ query: "*[_type == 'sponsor'] | order(tier asc)" }) as SponsorData[];
+    const sponsorsRaw = await sanityFetch({ query: "*[_type == 'sponsor'] | order(tier asc)", options: {next: { revalidate: 60 }} }) as SponsorData[];
 
     const sponsors: SponsorList = {
         platinum: sponsorsRaw.filter(({ tier }) => tier === "platinum"),
