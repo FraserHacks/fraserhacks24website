@@ -3,6 +3,6 @@ import type { QueryParams } from "sanity";
 import { client } from "./client";
 
 
-export async function sanityFetch<QueryResponse>({ query, params = {} }: { query: string; params?: QueryParams}) {
-    return client.fetch<QueryResponse>(query, params)
+export async function sanityFetch<QueryResponse>({ query, params = {}, options = {} }: { query: string; params?: QueryParams; options?: any}) {
+    return client.fetch<QueryResponse>(query, params, options)
 }
