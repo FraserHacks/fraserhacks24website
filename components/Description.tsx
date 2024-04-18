@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Description() {
   return (
-    <section className="flex flex-col md:px-20 md:pt-10 lg:px-32 items-center" id="faq" style={{ backgroundColor: "#000000" }}>
+    <section className="flex flex-col md:px-20 md:pt-10 lg:px-32 items-center" style={{ backgroundColor: "#000000" }}>
       <h2 className={`${styles.arcadeStyle} text-4xl text-center text-white py-10`}>Mississauga&apos;s Biggest Hackathon</h2>
 
       <div className="flex flex-col md:flex-row">
