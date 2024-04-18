@@ -39,15 +39,15 @@ export default function Description() {
       <div className="flex flex-col bg-black ">
         <h2 className="text-white text-center text-3xl font-bold pb-5">Check Out Our Success From 2019!</h2>
         <div className="flex flex-col md:flex-row">
-          <div className="flex flex-col bg-fraser-blue rounded-lg p-4 my-2 md:mx-5 w-auto text-white text-center space-x-4">
+          <div className="flex flex-col bg-fraser-blue rounded-lg p-4 my-2 md:mx-5 w-auto text-white text-center space-x-4 transition-transform duration-300 hover:scale-110">
             <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Students</p>
             <p className={`${styles.arcadeStyle}  text-5xl font-bold`}>130+</p>
           </div>
-          <div className="flex flex-col bg-fraser-blue rounded-lg p-4 my-2 md:mx-5 w-auto text-white text-center space-x-4">
+          <div className="flex flex-col bg-fraser-blue rounded-lg p-4 my-2 md:mx-5 w-auto text-white text-center space-x-4 transition-transform duration-300 hover:scale-110">
             <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Prizes</p>
             <p className={`${styles.arcadeStyle} text-5xl font-bold`}>13K+</p>
           </div>
-          <div className="flex flex-col bg-fraser-blue rounded-lg p-4 my-2 md:mx-5 w-auto text-white text-center space-x-4">
+          <div className="flex flex-col bg-fraser-blue rounded-lg p-4 my-2 md:mx-5 w-auto text-white text-center space-x-4 transition-transform duration-300 hover:scale-110">
             <p className={`${styles.arcadeStyle} text-showcase-black text-4xl`}>Projects</p>
             <p className={`${styles.arcadeStyle} text-5xl font-bold`}>30+</p>
           </div>
