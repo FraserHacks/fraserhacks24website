@@ -35,12 +35,16 @@ export default async function Home() {
         <div id="mc_embed_signup" >
           <label>
             <span className="label text-white">
-              Sign up for our mailing list to be notified of when applications are open.
+              Register for FraserHacks on the Google Form below! Registrations close on May 4th, 2024.
             </span>
             <div className="mt-4">
-              <button id="register" className="bg-purple-600 text-white py-3 px-6 text-lg font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-purple-700">
+              <a 
+                id="register" 
+                className="bg-purple-600 text-white py-3 px-6 text-lg font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-purple-700"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeV5FAnPZzQ_LL5Cx3f3lA7rH-N3DtHTNkFh6gP21Kyr_eNGw/viewform"
+              >
                 Register
-              </button>
+              </a>
             </div>
           </label>
           {/* Hidden input for bot protection */}
