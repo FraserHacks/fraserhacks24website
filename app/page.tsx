@@ -30,12 +30,12 @@ export default async function Home() {
       </div>
 
       <div className="text-center max-w-[800px]">
-        <h2 className={`${styles.arcadeStyle} text-white text-4xl font-semibold mt-4`}>May 24, 2024</h2>
+        <h2 className={`${styles.arcadeStyle} text-white text-4xl font-semibold mt-4`}>End of November, 2024</h2>
         <h3 className="text-gray-400 text-xl font-normal mt-2 mb-5">John Fraser Secondary School, Mississauga</h3>
         <div id="mc_embed_signup" >
           <label>
             <span className="label text-white">
-              Register for FraserHacks on the Google Form below! Registrations close on May 4th, 2024.
+              Register for FraserHacks on the Google Form below! Registrations close end of November, 2024.
             </span>
             <div className="mt-4">
               <a 
