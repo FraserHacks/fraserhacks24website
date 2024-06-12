@@ -35,7 +35,7 @@ export default async function Home() {
         <div id="mc_embed_signup" >
           <label>
             <span className="label text-white">
-              Register for FraserHacks on the Google Form below! Registrations close on May 4th, 2024.
+              Register for FraserHacks on the Google Form below!
             </span>
             <div className="mt-4">
               <a 
