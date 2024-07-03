@@ -19,7 +19,7 @@ export default function Description() {
         </div>
         <div className="flex flex-col items-center justify-center w-full md:w-[50%] ">
           <p className="flex text-xl text-center md:text-left leading-6 tracking-wide text-white">
-            FraserHacks is Mississauga&apos;s largest high school hackathon organized entirely by students at John Fraser Secondary School. More than 100 students from all of Peel Region will be coming together on May 24, 2024, for a full 10 hours of friendly hacking, enthusiastic learning, and delicious food.
+            FraserHacks is Mississauga&apos;s largest high school hackathon organized entirely by students at John Fraser Secondary School. More than 100 students from all of Peel Region will be coming together in November 2024, for a full 10 hours of friendly hacking, enthusiastic learning, and delicious food.
           </p>
           <b className="py-10 text-xl text-center">2665 Erin Centre Blvd, Mississauga, ON L5M 5H6</b>
         </div>
