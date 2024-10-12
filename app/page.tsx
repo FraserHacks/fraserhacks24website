@@ -30,7 +30,7 @@ export default async function Home() {
       </div>
 
       <div className="text-center max-w-[800px]">
-        <h2 className={`${styles.arcadeStyle} text-white text-4xl font-semibold mt-4`}>November 2024</h2>
+        <h2 className={`${styles.arcadeStyle} text-white text-4xl font-semibold mt-4`}>November 29th 2024, 8AM - 7:30PM</h2>
         <h3 className="text-gray-400 text-xl font-normal mt-2 mb-5">John Fraser Secondary School, Mississauga</h3>
         <div id="mc_embed_signup" >
           <label>
