@@ -15,7 +15,7 @@ export default function Footer() {
                     <Image src="/socials/TikTok-Social-Icon-Circle-White.svg" alt="TikTok Link" width={27} height={27} id="tiktok" />
                 </a>
                 <a href="https://www.linkedin.com/in/fraser-hacks-8bb1b0303/" target="_blank">
-                    <Image src="/socials/LI-In-Bug.png" alt="Linkedin Link" width={27} height={27} id="linkedin" />
+                    <Image src="/socials/LinkedIn_icon.svg" alt="Linkedin Link" width={27} height={27} id="linkedin" />
                 </a>
                 <a href="https://twitter.com/FraserHacks24" target="_blank">
                     <Image src="/socials/Twitter_Logo.svg" alt="Twitter Link" width={23} height={23} id="Twitter" />
