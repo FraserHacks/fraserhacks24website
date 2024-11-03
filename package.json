@@ -11,7 +11,9 @@
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.37.2",
+    "all": "^0.0.0",
     "framer-motion": "^11.1.3",
+    "fraserhacks24website": "file:",
     "next": "14.1.4",
     "next-sanity": "^7.1.4",
     "next-sanity-image": "^6.1.1",

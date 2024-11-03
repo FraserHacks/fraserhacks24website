@@ -1,7 +1,8 @@
-"use client"
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import NavbarLinks from './NavbarLinks';``
+"use client";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import NavbarLinks from "./NavbarLinks";
+``;
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,45 +20,54 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const targetScrollY = 16; 
+      const targetScrollY = 16;
       setNavbarScrolled(window.scrollY > targetScrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-// for some reason anything about max-w-7, the scrolling is not smooth and just directly goes to full screen
+  // for some reason anything about max-w-7, the scrolling is not smooth and just directly goes to full screen
   return (
-    
-    <main className={`navbar-root-container fixed inset-x-0 top-0 z-10 justify-center items-center transition-all duration-300 w-full `}>
-      <div className={`navbar-container transition-all duration-300 mx-auto flex h-16 lg:h-20 px-10 ${navbarScrolled ? 'max-w-7xl' : 'max-w-5xl'} ${navbarScrolled ? 'bg-fraser-dark-purple' : 'bg-fraser-dark-purple'} rounded-lg`}>
-        <div className='desktop-container flex justify-between w-full items-center h-full'>
-          <Link href="/" className="text-xl md:text-2xl lg:text-3xl font-bold hover:text-purple-400">
-            Fraser Hacks 
+    <main
+      className={`navbar-root-container fixed inset-x-0 top-0 z-10 justify-center items-center transition-all duration-300 w-full `}
+    >
+      <div
+        className={`navbar-container transition-all duration-300 mx-auto flex h-16 lg:h-20 px-10 ${
+          navbarScrolled ? "max-w-7xl" : "max-w-5xl"
+        } ${
+          navbarScrolled ? "bg-fraser-dark-purple" : "bg-fraser-dark-purple"
+        } rounded-lg`}
+      >
+        <div className="desktop-container flex justify-between w-full items-center h-full">
+          <Link
+            href="/"
+            className="text-xl md:text-2xl lg:text-3xl font-bold hover:text-purple-400"
+          >
+            Fraser Hacks
           </Link>
-
-          
-
           <div className="relative lg:hidden">
-          <button onClick={toggleMenu} className="text-lg">
-            {menuOpen ? 'Close' : 'Menu'}
-          </button>
-          <div className={`absolute right-0 mt-2 bg-fraser-blue shadow-md z-30 transition-opacity duration-300 ${menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-            <div className="flex flex-col items-start p-4">
-              <NavbarLinks closeMobileMenu={closeMenu} />
+            <button onClick={toggleMenu} className="text-lg">
+              {menuOpen ? "Close" : "Menu"}
+            </button>
+            <div
+              className={`absolute right-0 mt-2 bg-fraser-blue shadow-md z-30 transition-opacity duration-300 ${
+                menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+              }`}
+            >
+              <div className="flex flex-col items-start p-4">
+                <NavbarLinks closeMobileMenu={closeMenu} />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className={`hidden lg:flex space-x-4 lg:space-x-8`}>
-          <NavbarLinks closeMobileMenu={closeMenu} />
+          <div className={`hidden lg:flex space-x-4 lg:space-x-8`}>
+            <NavbarLinks closeMobileMenu={closeMenu} />
+          </div>
         </div>
       </div>
-    </div>
-  
     </main>
   );
 }
 
 export default Navbar;
-
