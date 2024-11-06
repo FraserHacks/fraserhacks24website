@@ -8,6 +8,7 @@ type TeamMember = {
   name: string;
   position: string;
   email: string;
+  instagram: string;
 };
 
 type Sector = {
@@ -17,8 +18,20 @@ type Sector = {
 };
 const sectors: Sector[] = [
   {
+    sectorName: "Lead Organizer",
+    description: "Organizes and manages all aspects Fraserhacks as a whole",
+    teamMembers: [
+      {
+        name: "Arya Holmukhe",
+        position: "Lead Organizer",
+        email: "738572@pdsb.net",
+        instagram: "Arya1.exe",
+      },
+    ],
+  },
+  {
     sectorName: "Tech",
-    description: "Responsible for technical aspects of the project.",
+    description: "Responsible for technical aspects of the project. ",
     teamMembers: [
       { name: "Edward Wang", position: "Director", email: "738572@pdsb.net" },
       { name: "Sohum Padhye", position: "Member", email: "795804@pdsb.net" },
