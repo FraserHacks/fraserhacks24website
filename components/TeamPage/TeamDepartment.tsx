@@ -6,6 +6,7 @@ type TeamMemberType = {
   name: string;
   position: string;
   email: string;
+  instagram: string;
 };
 
 type Sector = {
@@ -35,6 +36,7 @@ const TeamDepartment: React.FC<TeamDepartmentProps> = ({ sector }) => {
               name={member.name}
               position={member.position}
               email={member.email}
+              instagram={member.instagram}
             />
           ))}
         </ul>

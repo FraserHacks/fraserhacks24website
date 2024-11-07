@@ -8,7 +8,7 @@ type TeamMember = {
   name: string;
   position: string;
   email: string;
-  instagram: string;
+  instagram?: string; // Optional field for Instagram handle
 };
 
 type Sector = {
@@ -16,6 +16,7 @@ type Sector = {
   description: string;
   teamMembers: TeamMember[];
 };
+
 const sectors: Sector[] = [
   {
     sectorName: "Lead Organizer",
@@ -24,20 +25,45 @@ const sectors: Sector[] = [
       {
         name: "Arya Holmukhe",
         position: "Lead Organizer",
-        email: "738572@pdsb.net",
+        email: "1003200@pdsb.net",
         instagram: "Arya1.exe",
       },
     ],
   },
   {
     sectorName: "Tech",
-    description: "Responsible for technical aspects of the project. ",
+    description: "Responsible for technical aspects of the project.",
     teamMembers: [
-      { name: "Edward Wang", position: "Director", email: "738572@pdsb.net" },
-      { name: "Sohum Padhye", position: "Member", email: "795804@pdsb.net" },
-      { name: "Aditya Rajesh", position: "Member", email: "815369@pdsb.net" },
-      { name: "Darsh Gupta", position: "Member", email: "1023835@pdsb.net" },
-      { name: "Jason Chou", position: "Member", email: "778130@pdsb.net" },
+      {
+        name: "Edward Wang",
+        position: "Director",
+        email: "738572@pdsb.net",
+        instagram: "Edward.w_7",
+      },
+      {
+        name: "Sohum Padhye",
+        position: "Member",
+        email: "795804@pdsb.net",
+        instagram: "sohum.padhye",
+      },
+      {
+        name: "Aditya Rajesh",
+        position: "Member",
+        email: "815369@pdsb.net",
+        instagram: "",
+      },
+      {
+        name: "Darsh Gupta",
+        position: "Member",
+        email: "1023835@pdsb.net",
+        instagram: "darshg321",
+      },
+      {
+        name: "Jason Chou",
+        position: "Member",
+        email: "778130@pdsb.net",
+        instagram: "jasonchou0105",
+      },
     ],
   },
   {
@@ -48,17 +74,25 @@ const sectors: Sector[] = [
         name: "Tharaka Thurairasa",
         position: "Director",
         email: "734859@pdsb.net",
+        instagram: "",
       },
-      { name: "Mei Ka Pow", position: "Member", email: "893100@pdsb.net" },
+      {
+        name: "Mei Ka Pow",
+        position: "Member",
+        email: "893100@pdsb.net",
+        instagram: "meishija",
+      },
       {
         name: "Amrita Rajaram",
         position: "Member",
         email: "782630@pdsb.net",
+        instagram: "",
       },
       {
         name: "Tarek Chanouha",
         position: "Member",
         email: "980858@pdsb.net",
+        instagram: "",
       },
     ],
   },
@@ -70,32 +104,80 @@ const sectors: Sector[] = [
         name: "Maitreyee Gangal",
         position: "Director",
         email: "1012833@pdsb.net",
+        instagram: "_maitsss",
       },
-      { name: "Johnson Yu", position: "Member", email: "867570@pdsb.net" },
-      { name: "Prerana Sil", position: "Member", email: "975794@pdsb.net" },
-      { name: "Irene Wang", position: "Member", email: "899545@pdsb.net" },
-      { name: "Darren Yip", position: "Member", email: "789147@pdsb.net" },
-      { name: "Jason Chou", position: "Member", email: "778130@pdsb.net" }, // Also in Tech
+      {
+        name: "Johnson Yu",
+        position: "Member",
+        email: "867570@pdsb.net",
+        instagram: "toastcarrier",
+      },
+      {
+        name: "Prerana Sil",
+        position: "Member",
+        email: "975794@pdsb.net",
+        instagram: "",
+      },
+      {
+        name: "Irene Wang",
+        position: "Member",
+        email: "899545@pdsb.net",
+        instagram: "",
+      },
+      {
+        name: "Darren Yip",
+        position: "Member",
+        email: "789147@pdsb.net",
+        instagram: "darren.y1",
+      },
+      {
+        name: "Jason Chou",
+        position: "Member",
+        email: "778130@pdsb.net",
+        instagram: "jasonchou0105",
+      }, // Also in Tech
     ],
   },
   {
     sectorName: "Logistics",
     description: "Coordinates logistics and event planning.",
     teamMembers: [
-      { name: "Claire Wang", position: "Director", email: "813338@pdsb.net" },
-      { name: "Brian Zhao", position: "Member", email: "778247@pdsb.net" },
+      {
+        name: "Claire Wang",
+        position: "Director",
+        email: "813338@pdsb.net",
+        instagram: "claire_chair.w",
+      },
+      {
+        name: "Brian Zhao",
+        position: "Member",
+        email: "778247@pdsb.net",
+        instagram: "Brian Zhao",
+      },
       {
         name: "Aaradhana Vijaykrishnan",
         position: "Member",
         email: "815369@pdsb.net",
+        instagram: "",
       },
       {
         name: "Danny Kenneth",
         position: "Member",
         email: "1021722@pdsb.net",
+        instagram: "danny.kenneth_777",
       },
-      { name: "Grace Zhang", position: "Member", email: "872984@pdsb.net" },
-      { name: "Arnav Kute", position: "Member", email: "1018061@pdsb.net" },
+      {
+        name: "Grace Zhang",
+        position: "Member",
+        email: "872984@pdsb.net",
+        instagram: "",
+      },
+      {
+        name: "Arnav Kute",
+        position: "Member",
+        email: "1018061@pdsb.net",
+        instagram: "",
+      },
     ],
   },
 ];
