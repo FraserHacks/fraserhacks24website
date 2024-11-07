@@ -2,35 +2,34 @@ import React from "react";
 import TeamMember from "./TeamMember"; // Adjust path if necessary
 
 // Define types if not imported from another file
-type TeamMemberType = {
+type TeamMember = {
   name: string;
   position: string;
   email: string;
-  instagram: string;
+  instagram?: string;
 };
 
-type Sector = {
+type TeamSector = {
   sectorName: string;
   description: string;
-  teamMembers: TeamMemberType[];
+  teamMembers: TeamMember[];
 };
-
 type TeamDepartmentProps = {
-  sector: Sector;
+  teamSector: TeamSector;
 };
 
-const TeamDepartment: React.FC<TeamDepartmentProps> = ({ sector }) => {
+const TeamDepartment: React.FC<TeamDepartmentProps> = ({ teamSector }) => {
   return (
     <div className="flex flex-row justify-center my-10 w-full">
       <div className="flex flex-row w-5/6 gap-20">
         <div className="w-2/5 p-7 bg-purple-700 bg-opacity-70 rounded">
           <h2 className="text-sky-200 font-bold text-xl">
-            {sector.sectorName}
+            {teamSector.sectorName}
           </h2>
-          <p>{sector.description}</p>
+          <p>{teamSector.description}</p>
         </div>
         <ul className="grid grid-cols-2 gap-4 w-3/4">
-          {sector.teamMembers.map((member) => (
+          {teamSector.teamMembers.map((member) => (
             <TeamMember
               key={member.name}
               name={member.name}

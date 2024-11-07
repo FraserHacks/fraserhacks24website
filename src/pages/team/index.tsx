@@ -47,10 +47,10 @@ const sectors: Sector[] = [
         instagram: "sohum.padhye",
       },
       {
-        name: "Aditya Rajesh",
+        name: "Jason Chou",
         position: "Member",
-        email: "815369@pdsb.net",
-        instagram: "",
+        email: "778130@pdsb.net",
+        instagram: "jasonchou0105",
       },
       {
         name: "Darsh Gupta",
@@ -59,10 +59,10 @@ const sectors: Sector[] = [
         instagram: "darshg321",
       },
       {
-        name: "Jason Chou",
+        name: "Aditya Rajesh",
         position: "Member",
-        email: "778130@pdsb.net",
-        instagram: "jasonchou0105",
+        email: "815369@pdsb.net",
+        instagram: "",
       },
     ],
   },
@@ -195,7 +195,7 @@ const TeamPage = () => {
       >
         <div id="team" className="mt-20">
           {sectors.map((sector) => (
-            <TeamDepartment key={sector.sectorName} sector={sector} />
+            <TeamDepartment key={sector.sectorName} teamSector={sector} />
           ))}
         </div>
       </main>

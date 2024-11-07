@@ -7,7 +7,7 @@ type TeamMemberProps = {
   name: string;
   position: string;
   email: string;
-  instagram: string;
+  instagram?: string;
 };
 
 const TeamMember: React.FC<TeamMemberProps> = ({
