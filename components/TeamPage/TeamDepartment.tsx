@@ -28,7 +28,7 @@ const TeamDepartment: React.FC<TeamDepartmentProps> = ({ teamSector }) => {
           </h2>
           <p>{teamSector.description}</p>
         </div>
-        <ul className="grid grid-cols-2 gap-4 w-3/4">
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-3/4">
           {teamSector.teamMembers.map((member) => (
             <TeamMember
               key={member.name}
