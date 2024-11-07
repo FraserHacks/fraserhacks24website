@@ -32,7 +32,8 @@ const sectors: Sector[] = [
   },
   {
     sectorName: "Tech",
-    description: "Responsible for technical aspects of the project.",
+    description:
+      "Responsible for technical aspects of the project. This mainly includes making, managing, and updating the website.",
     teamMembers: [
       {
         name: "Edward Wang",
@@ -68,7 +69,8 @@ const sectors: Sector[] = [
   },
   {
     sectorName: "Marketing",
-    description: "Handles the marketing and outreach aspects of the project.",
+    description:
+      "Handles the marketing and outreach aspects of the project. Manages the Fraserhacks instagram as well as all the advertising",
     teamMembers: [
       {
         name: "Tharaka Thurairasa",
@@ -98,7 +100,8 @@ const sectors: Sector[] = [
   },
   {
     sectorName: "Outreach + Finance",
-    description: "Oversees outreach and financial planning.",
+    description:
+      "Oversees outreach and financial planning. Finds sponsors for Fraserhacks and does budgeting for the project",
     teamMembers: [
       {
         name: "Maitreyee Gangal",
@@ -140,7 +143,8 @@ const sectors: Sector[] = [
   },
   {
     sectorName: "Logistics",
-    description: "Coordinates logistics and event planning.",
+    description:
+      "Coordinates logistics and event planning. Plans out how the even will lay out and things that will be there",
     teamMembers: [
       {
         name: "Claire Wang",

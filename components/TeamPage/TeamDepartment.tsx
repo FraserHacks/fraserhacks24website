@@ -21,7 +21,7 @@ type TeamDepartmentProps = {
 const TeamDepartment: React.FC<TeamDepartmentProps> = ({ teamSector }) => {
   return (
     <div className="flex flex-row justify-center my-10 w-full">
-      <div className="flex flex-row w-5/6 gap-20">
+      <div className="flex flex-row w-4/6 gap-20">
         <div className="w-2/5 p-7 bg-purple-700 bg-opacity-70 rounded">
           <h2 className="text-sky-200 font-bold text-xl">
             {teamSector.sectorName}
