@@ -137,7 +137,7 @@ const sectors: Sector[] = [
         name: "Jason Chou",
         position: "Member",
         email: "778130@pdsb.net",
-        instagram: "jasonchou0105",
+        instagram: "jason_chou0105",
       }, // Also in Tech
     ],
   },
