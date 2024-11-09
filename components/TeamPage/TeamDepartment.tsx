@@ -20,15 +20,15 @@ type TeamDepartmentProps = {
 
 const TeamDepartment: React.FC<TeamDepartmentProps> = ({ teamSector }) => {
   return (
-    <div className="flex flex-row justify-center my-10 w-full">
-      <div className="flex flex-row w-4/6 gap-20">
-        <div className="w-2/5 p-7 bg-purple-700 bg-opacity-70 rounded">
+    <div className="flex justify-center my-10 w-full">
+      <div className="flex flex-col sm:flex-row w-4/6 gap-10 sm:gap-20">
+        <div className="w-full sm-w-2/5 p-7 bg-purple-700 bg-opacity-70 rounded">
           <h2 className="text-sky-200 font-bold text-xl">
             {teamSector.sectorName}
           </h2>
           <p>{teamSector.description}</p>
         </div>
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-3/4">
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full sm:w-3/4">
           {teamSector.teamMembers.map((member) => (
             <TeamMember
               key={member.name}
