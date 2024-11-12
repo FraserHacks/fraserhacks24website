@@ -26,7 +26,7 @@ const TeamDepartment: React.FC<TeamDepartmentProps> = ({ teamSector }) => {
           <h2 className="text-sky-200 font-bold text-xl">
             {teamSector.sectorName}
           </h2>
-          <p>{teamSector.description}</p>
+          <p className="text-white">{teamSector.description}</p>
         </div>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full sm:w-3/6">
           {teamSector.teamMembers.map((member) => (
