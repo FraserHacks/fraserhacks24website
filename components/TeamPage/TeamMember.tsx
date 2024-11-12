@@ -19,13 +19,13 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   return (
     <li className="flex flex-col justify-between border-2 p-3 border-purple-700 border-opacity-50 rounded w-70 transform hover:border-opacity-100 hover:scale-110 transition duration-200">
       <div className="mb-5">
-        <div className="text-lg">{name}</div>
+        <div className="text-lg text-white">{name}</div>
         <div className="text-yellow-500">{position}</div>
       </div>
       <div className="flex flex-row">
         <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
           <svg
-            className="w-6 h-6 m-1 hover:text-red-500 transition duration-500 ease-in-out"
+            className="w-6 h-6 m-1 text-white hover:text-red-500 transition duration-500 ease-in-out"
             viewBox="0 0 75.294 75.294"
           >
             <path
@@ -47,7 +47,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
             rel="noopener noreferrer"
           >
             <svg
-              className="w-6 h-6 m-1 hover:text-pink-500 transition duration-500 ease-in-out"
+              className="w-6 h-6 m-1 text-white hover:text-pink-500 transition duration-500 ease-in-out"
               viewBox="0 0 1024 1024"
             >
               <path

@@ -42,7 +42,7 @@ function Navbar() {
         <div className="desktop-container flex justify-between w-full items-center h-full">
           <Link
             href="/"
-            className="text-xl md:text-2xl lg:text-3xl font-bold hover:text-purple-400"
+            className="text-white text-xl md:text-2xl lg:text-3xl font-bold hover:text-purple-400"
           >
             Fraser Hacks
           </Link>
