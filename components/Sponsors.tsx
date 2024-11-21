@@ -21,10 +21,27 @@ export interface SponsorList {
 }
 
 export async function SponsorSection({ sponsors, name, size }: { sponsors: SponsorData[]; name: string, size: number }) {
+    let gradient;
+
+    switch(name) {
+        case "Platinum":
+            gradient = "bg-gradient-to-r from-slate-600 to-slate-400 p-4 rounded-lg shadow-[0_0_80px_-10px_rgba(255,255,255,0.8)] mb-8";
+            break;
+        case "Gold":
+            gradient = "bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-200 mb-4";
+            break;
+        case "Silver":
+            gradient = "bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-white mb-4";
+            break;
+        case "Bronze":
+            gradient = "bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-200 mb-4";
+            break;
+    }
+
     return (
         <div className="flex flex-col items-center justify-center">
-            <h2 className="text-3xl font-semibold pb-5 text-center text-">{name} Sponsors</h2>
-            <div className='flex flex-wrap gap-6 lg:gap-12 items-center justify-center'>
+            <h2 className={`text-3xl font-semibold pb-5 text-center ${gradient} mt-4`}>{name} Sponsors</h2>
+            <div className={`flex gap-4 lg:gap-6 items-center justify-center`}>
                 {sponsors.map((data: SponsorData) => <SponsorCard {...data} key={data.name} imageHeight={size} />)}
             </div>
         </div>
@@ -51,7 +68,21 @@ export default async function Sponsors() {
 
             <div className='flex flex-col gap-12 w-full items-center'>
                 {sponsors.platinum.length > 0 && (
-                    <SponsorSection sponsors={sponsors.platinum} name="Platinum" size={160} />
+                    // <SponsorSection sponsors={sponsors.platinum} name="Platinum" size={160} />
+                    <div>
+                        <div className="w-full flex justify-center">
+                            <h2 className={`w-fit text-3xl font-semibold pb-5 text-center bg-gradient-to-r from-slate-600 to-slate-400 p-4 rounded-lg shadow-[0_0_80px_-10px_rgba(255,255,255,0.8)] mb-8 mt-4`}>Platinum Sponsors</h2>
+                        </div>
+                        <div className="relative flex overflow-hidden shadow-[inset_16px_16px_16px_rgba(0,0,0,0.6)]">
+                            <div className="flex gap-x-4 px-4 animate-marquee overflow-hidden w-full">
+                                {sponsors.platinum.map((data: SponsorData) => <SponsorCard {...data} key={data.name} imageHeight={250} />)}
+                            </div>
+
+                            <div className="absolute flex gap-x-4 top-0 animate-marquee2 overflow-hidden">
+                                {sponsors.platinum.map((data: SponsorData) => <SponsorCard {...data} key={data.name} imageHeight={250} />)}
+                            </div>
+                        </div>
+                    </div>
                 )}
 
                 {sponsors.gold.length > 0 && (
@@ -64,6 +95,10 @@ export default async function Sponsors() {
 
                 {sponsors.bronze.length > 0 && (
                     <SponsorSection sponsors={sponsors.bronze} name="Bronze" size={100} />
+                )}
+
+                {sponsors.none.length > 0 && (
+                    <SponsorSection sponsors={sponsors.none} name="Other" size={100} />
                 )}
 
                 <a className="flex items-center justify-center bg-fraser-turquoise h-12 py-3 px-6 text-md md:text-lg text-black font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-fraser-dark-turquoise" href="mailto:sponsors@fraserhacks.com" target="_blank">

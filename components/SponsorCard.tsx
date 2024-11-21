@@ -12,7 +12,7 @@ const SponsorCard = ({ name, link, image, imageHeight }: SponsorData) => {
     );
 
     return (
-        <a href={link} target="_blank" rel="noreferrer" className='hover:scale-110 transition-all duration-150'>
+        <a href={link} target="_blank" rel="noreferrer" className='hover:opacity-85 opacity-100 transition-all duration-150 p-4 bg-white flex flex-col justify-center place-items-center'>
             <Image {...sanityImageProps} alt={name} height={imageHeight} width={sanityImageProps.width / sanityImageProps.height * imageHeight} className="transition-all duration-150" quality={100} />
         </a>
     )
