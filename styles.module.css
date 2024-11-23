@@ -1,10 +1,10 @@
-@keyframes blinkAnimation {
-  0%, 8%, 20%, 100% { opacity: 1; } /* Image is visible most of the time */
-  4%, 16% { opacity: 0; } /* Two quick blinks */
+@keyframes glowAnimation {
+  0%, 100% {filter: drop-shadow(0 0 50px #8A64D6)}
+  50% {filter: drop-shadow(0 0 50px #5C3A92)}
 }
 
-.blink {
-  animation: blinkAnimation 2s infinite; /* Total duration including pause */
+.glow {
+  animation: glowAnimation 5s infinite; /* Total duration including pause */
 }
 
 @font-face {
@@ -16,4 +16,3 @@
 .arcadeStyle {
   font-family: 'ArcadeFont', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
 }
-
