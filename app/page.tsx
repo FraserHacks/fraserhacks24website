@@ -21,7 +21,7 @@ export default async function Home() {
             alt="FraserHacks Logo: Purple circular logo"
             width={500}
             height={500}
-            className={`${styles.blink} ${styles.glow} mb-0`}
+            className={`${styles.glow} mb-0 select-none`}
           />
         </div>
 
