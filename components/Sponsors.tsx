@@ -99,7 +99,7 @@ export default async function Sponsors() {
                 )}
 
                 {sponsors.none.length > 0 && (
-                    <SponsorSection sponsors={sponsors.none} name="Other" size={100} />
+                    <div className="w-full px-8"><SponsorSection sponsors={sponsors.none} name="Other" size={100} /></div>
                 )}
 
                 <a className="flex items-center justify-center bg-fraser-turquoise h-12 py-3 px-6 text-md md:text-lg text-black font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-fraser-dark-turquoise" href="mailto:sponsors@fraserhacks.com" target="_blank">
