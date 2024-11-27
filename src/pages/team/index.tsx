@@ -170,12 +170,6 @@ const sectors: Sector[] = [
         email: "872984@pdsb.net",
         instagram: "",
       },
-      {
-        name: "Arnav Kute",
-        position: "Member",
-        email: "1018061@pdsb.net",
-        instagram: "",
-      },
     ],
   },
 ];
