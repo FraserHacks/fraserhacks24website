@@ -7,6 +7,8 @@ import Sponsors from "../components/Sponsors";
 
 import Footer from "../components/Footer";
 import Description from "../components/Description";
+import Index from "@/src/pages/attendance";
+import Attendance from "@/src/pages/attendance";
 
 export default async function Home() {
   return (
@@ -70,7 +72,9 @@ export default async function Home() {
         <div id="sponsors">
           <Sponsors />
         </div>
-
+        <div id="attendance">
+          <Attendance />
+        </div>
         <Footer />
       </main>
     </>

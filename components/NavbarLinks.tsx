@@ -81,6 +81,14 @@ function NavbarLinks({ closeMobileMenu }: NavbarLinksProps) {
             Team
           </div>
         </Link>
+        <Link href="/attendance" passHref>
+          <div
+              className="text-white text-lg no-underline hover:text-purple-400"
+              onClick={closeMobileMenu}
+          >
+            Attendance
+          </div>
+        </Link>
       </div>
     </>
   );
