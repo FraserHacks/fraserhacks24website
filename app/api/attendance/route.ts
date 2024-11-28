@@ -10,9 +10,9 @@ export async function POST(req: Request) {
         const body = await req.json(); // Parse the JSON body
         const { email, accommodations } = body;
 
-        if (!email || !accommodations) {
+        if (!email) {
             return NextResponse.json(
-                { error: "Email and accommodations are required." },
+                { error: "Email is required." },
                 { status: 400 }
             );
         }
