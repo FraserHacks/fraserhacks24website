@@ -73,12 +73,12 @@ export default async function Sponsors() {
                             <h2 className={`w-fit text-3xl font-semibold pb-5 text-center bg-gradient-to-r from-slate-600 to-slate-400 p-4 rounded-lg shadow-[0_0_80px_-10px_rgba(255,255,255,0.8)] mb-8 mt-4`}>Platinum Sponsors</h2>
                         </div>
                         <div className="flex flex-row overflow-y-hidden">
-                            <div className="relative flex overflow-hidden gap-x-4 h-full w-screen">
-                                <div className="flex gap-x-4 animate-marquee overflow-hidden h-full p-4">
+                            <div className="relative flex overflow-hidden gap-x-2 h-full w-[400vw] sm:w-[250vw] md:w-[250vw] lg:gap-x-4 2xl:w-[200vw]">
+                                <div className="flex gap-x-2 animate-marquee overflow-hidden h-full p-2 lg:gap-x-4 lg:p-4">
                                     {sponsors.platinum.map((data: SponsorData) => <SponsorCard {...data} key={data.name} imageHeight={250} />)}
                                 </div>
 
-                                <div className="absolute flex gap-x-4 top-0 animate-marquee2 overflow-hidden h-full py-4">
+                                <div className="absolute flex gap-x-2 top-0 animate-marquee2 overflow-hidden h-full py-2 lg:gap-x-4 lg:py-4 2xl:w-[200vw]">
                                     {sponsors.platinum.map((data: SponsorData) => <SponsorCard {...data} key={data.name} imageHeight={250} />)}
                                 </div>
                             </div>
@@ -87,19 +87,19 @@ export default async function Sponsors() {
                 )}
 
                 {sponsors.gold.length > 0 && (
-                    <SponsorSection sponsors={sponsors.gold} name="Gold" size={140} />
+                    <div className="w-screen flex justify-center px-8"><SponsorSection sponsors={sponsors.gold} name="Gold" size={140} /></div>
                 )}
 
                 {sponsors.silver.length > 0 && (
-                    <SponsorSection sponsors={sponsors.silver} name="Silver" size={120} />
+                    <div className="w-screen flex justify-center px-8"><SponsorSection sponsors={sponsors.silver} name="Silver" size={120} /></div>
                 )}
 
                 {sponsors.bronze.length > 0 && (
-                    <div className="w-full px-8"><SponsorSection sponsors={sponsors.bronze} name="Bronze" size={100} /></div>
+                    <div className="w-screen flex justify-center px-8"><SponsorSection sponsors={sponsors.bronze} name="Bronze" size={100} /></div>
                 )}
 
                 {sponsors.none.length > 0 && (
-                    <div className="w-full px-8"><SponsorSection sponsors={sponsors.none} name="Other" size={100} /></div>
+                    <div className="w-screen flex justify-center px-8"><SponsorSection sponsors={sponsors.none} name="Other" size={100} /></div>
                 )}
 
                 <a className="flex items-center justify-center bg-fraser-turquoise h-12 py-3 px-6 text-md md:text-lg text-black font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-fraser-dark-turquoise" href="mailto:sponsors@fraserhacks.com" target="_blank">
