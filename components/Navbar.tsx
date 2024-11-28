@@ -55,7 +55,7 @@ function Navbar() {
                 menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
               }`}
             >
-              <div className="flex flex-col items-start p-4">
+              <div className="flex flex-col items-start p-4x">
                 <NavbarLinks closeMobileMenu={closeMenu} />
               </div>
             </div>
