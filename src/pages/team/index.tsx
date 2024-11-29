@@ -59,12 +59,6 @@ const sectors: Sector[] = [
         email: "1023835@pdsb.net",
         instagram: "darshg321",
       },
-      {
-        name: "Aditya Rajesh",
-        position: "Member",
-        email: "815369@pdsb.net",
-        instagram: "",
-      },
     ],
   },
   {
@@ -168,6 +162,12 @@ const sectors: Sector[] = [
         name: "Grace Zhang",
         position: "Member",
         email: "872984@pdsb.net",
+        instagram: "",
+      },
+      {
+        name: "Aditya Rajesh",
+        position: "Member",
+        email: "815369@pdsb.net",
         instagram: "",
       },
     ],
