@@ -1,11 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 export default function Attendance() {
     const { data: session, status } = useSession();
     const [accommodations, setAccommodations] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
+
+    useEffect(() => {
+        if (session?.user?.email) {
+            handleSubmit();
+        }
+    }, [session?.user?.email]); // Trigger when email becomes available
 
     // Loading state
     if (status === "loading") {
@@ -16,10 +22,11 @@ export default function Attendance() {
         );
     }
 
-    // Handle accommodations submission
-    const handleSubmit = async () => {
-        if (!accommodations.trim()) {
-            alert("Please enter your accommodations before submitting.");
+    // Handle sign-in and accommodations submission
+    async function handleSubmit() {
+        // If not signed in, trigger Google Sign-In
+        if (!session) {
+            signIn("google", { callbackUrl: "/" });
             return;
         }
 
@@ -33,19 +40,19 @@ export default function Attendance() {
                 },
                 body: JSON.stringify({
                     email: session?.user?.email,
-                    accommodations,
+                    accommodations: accommodations.trim() || "No accommodations specified",
                 }),
             });
 
             if (response.ok) {
-                alert("Accommodations submitted successfully!");
+                alert("Attendance and accommodations submitted successfully!");
                 setAccommodations("");
             } else {
                 const errorData = await response.json();
                 alert(`Error: ${errorData.error}`);
             }
         } catch (error) {
-            console.error("Error submitting accommodations:", error);
+            console.error("Error submitting attendance:", error);
             alert("An error occurred. Please try again.");
         } finally {
             setIsSubmitting(false);
@@ -58,7 +65,7 @@ export default function Attendance() {
     return (
         <div className="w-full max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl border border-gray-800 overflow-hidden">
             {/* Gmail Warning */}
-            {isGmailAccount && (
+            {session && isGmailAccount && (
                 <div className="bg-red-600/20 border-b border-red-600 p-4 flex items-center">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -80,26 +87,49 @@ export default function Attendance() {
                 </div>
             )}
 
-            {/* Authentication Section */}
-            <div className="p-6 bg-gradient-to-r from-purple-600/20 to-blue-600/20 border-b border-gray-800">
-                {!session ? (
-                    <div className="text-center">
-                        <button
-                            onClick={() => signIn("google", { callbackUrl: "/" })}
-                            className="w-full px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg
-              transition-all duration-300 hover:bg-purple-700 hover:shadow-lg
-              focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
-                        >
-                            Sign in with PDSB Account
-                        </button>
-                    </div>
-                ) : (
-                    <div className="space-y-3 text-center">
-                        <p className="text-white">
-                            Signed in as{" "}
-                            <span className="font-semibold text-purple-400">
-                {session.user?.email}
-              </span>
+            {/* Accommodations Section */}
+            <div className="p-6 space-y-4">
+                <div>
+                    <label className="block text-white text-lg font-medium mb-2">
+                        Accommodations (Optional)
+                    </label>
+                    <input
+                        type="text"
+                        value={accommodations}
+                        onChange={(e) => setAccommodations(e.target.value)}
+                        placeholder="Enter any special requirements"
+                        className="w-full px-4 py-3 bg-gray-800 text-gray-200
+            rounded-lg border border-gray-700
+            focus:outline-none focus:ring-2 focus:ring-purple-600
+            transition-all duration-200 placeholder-gray-500"
+                    />
+                </div>
+
+                {/* Merged Sign In and Submit Button */}
+                <button
+                    onClick={handleSubmit}
+                    disabled={isSubmitting}
+                    className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 
+          ${
+                        isSubmitting
+                            ? "bg-gray-600 text-gray-400 cursor-not-allowed"
+                            : !session
+                                ? "bg-purple-600 text-white hover:bg-purple-700 hover:shadow-lg"
+                                : "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-md"
+                    }`}
+                >
+                    {isSubmitting
+                        ? "Submitting..."
+                        : !session
+                            ? "Sign in with PDSB Account"
+                            : "Submit Accommodations"}
+                </button>
+
+                {/* Sign Out Option if Logged In */}
+                {session && (
+                    <div className="text-center mt-4">
+                        <p className="text-white text-sm mb-2">
+                            Signed in as <span className="font-semibold text-purple-400">{session.user?.email}</span>
                         </p>
                         <button
                             onClick={() => signOut()}
@@ -112,39 +142,6 @@ export default function Attendance() {
                     </div>
                 )}
             </div>
-
-            {/* Accommodations Section */}
-            {session && (
-                <div className="p-6 space-y-4">
-                    <div>
-                        <label className="block text-white text-lg font-medium mb-2">
-                            Accommodations
-                        </label>
-                        <input
-                            type="text"
-                            value={accommodations}
-                            onChange={(e) => setAccommodations(e.target.value)}
-                            placeholder="Enter any special requirements"
-                            className="w-full px-4 py-3 bg-gray-800 text-gray-200
-              rounded-lg border border-gray-700
-              focus:outline-none focus:ring-2 focus:ring-purple-600
-              transition-all duration-200 placeholder-gray-500"
-                        />
-                    </div>
-                    <button
-                        onClick={handleSubmit}
-                        disabled={isSubmitting}
-                        className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 
-            ${
-                            isSubmitting
-                                ? "bg-gray-600 text-gray-400 cursor-not-allowed"
-                                : "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-md"
-                        }`}
-                    >
-                        {isSubmitting ? "Submitting..." : "Submit Accommodations"}
-                    </button>
-                </div>
-            )}
         </div>
     );
 }
