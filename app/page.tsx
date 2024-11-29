@@ -37,7 +37,7 @@ export default async function Home() {
                 <a
                     id="register"
                     className="bg-purple-600 text-white py-3 px-6 text-lg font-medium rounded-lg cursor-pointer transition-colors duration-300 hover:bg-purple-700"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeV5FAnPZzQ_LL5Cx3f3lA7rH-N3DtHTNkFh6gP21Kyr_eNGw/viewform"
+                    href="https://forms.gle/ApN1E78zsCk1Qjoj6"
                 >
                   Register
                 </a>
