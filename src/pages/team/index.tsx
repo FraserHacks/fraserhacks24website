@@ -127,6 +127,12 @@ const sectors: Sector[] = [
         email: "789147@pdsb.net",
         instagram: "darren.y1",
       },
+      {
+        name: "James Lian",
+        position: "Member",
+        email: "755833@pdsb.net",
+        instagram: "",
+      },
     ],
   },
   {
